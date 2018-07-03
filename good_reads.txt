@@ -1,0 +1,344 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Spark Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Spark - Pyspark and SparkR
+https://www.analyticsvidhya.com/blog/2016/10/using-pyspark-to-perform-transformations-and-actions-on-rdd/
+https://www.analyticsvidhya.com/blog/2016/06/learning-path-step-step-guide-beginners-learn-sparkr/
+
+Tuning spark jobs
+http://blog.cloudera.com/blog/2015/03/how-to-tune-your-apache-spark-jobs-part-1/
+
+Everything about spark structured streaming:
+https://databricks.com/blog/2017/08/24/anthology-of-technical-assets-on-apache-sparks-structured-streaming.html
+
+Spark on Yarn
+https://community.hortonworks.com/articles/42803/spark-on-yarn-executor-resource-allocation-optimiz.html
+https://community.hortonworks.com/articles/42027/rdd-vs-dataframe-vs-sparksql.html
+http://blog.cloudera.com/blog/2014/05/apache-spark-resource-management-and-yarn-app-models/
+
+Flow of a spark job
+https://stackoverflow.com/questions/32621990/what-are-workers-executors-cores-in-spark-standalone-cluster?rq=1
+
+Executors and Memory for a spark job, calculation.
+http://site.clairvoyantsoft.com/understanding-resource-allocation-configurations-spark-application/
+One limits the maximal heap memory of JVM by the option “-Xmx”.
+Spark + Zeppelin
+https://www.slideshare.net/vinnies12/apache-spark-apache-zeppelin-security-for-enterprise-deployments
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Cluster Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Rack awareness
+https://community.hortonworks.com/content/kbentry/43057/rack-awareness-1.html
+
+Monitoring
+http://blog.sequenceiq.com/blog/2014/10/07/hadoop-monitoring/
+
+Cluster Sizing
+https://0x0fff.com/hadoop-cluster-sizing/
+
+Netowork configuration for a cluster
+https://community.hortonworks.com/articles/8563/typical-hdp-cluster-network-configuration-best-pra.html
+
+Capacity:
+https://datahub.packtpub.com/tutorials/sizing-configuring-hadoop-cluster/
+http://hadooptutorial.info/formula-to-calculate-hdfs-nodes-storage/
+
+Hadoop wiki - Good Information
+https://wiki.apache.org/hadoop/#General_Information
+https://wiki.apache.org/hadoop/FAQ#If_a_block_size_of_64MB_is_used_and_a_file_is_written_that_uses_less_than_64MB.2C_will_64MB_of_disk_space_be_consumed.3F
+
+grepcode: - Has code base with valid comments which are easy to understand.
+http://grepcode.com/file/repo1.maven.org/maven2/org.apache.hadoop/hadoop-hdfs/2.7.1/org/apache/hadoop/hdfs/server/blockmanagement/BlockManager.java?av=f
+
+OS parameters for Hadoop Cluster
+https://community.hortonworks.com/articles/55637/operating-system-os-optimizations-for-better-clust.html
+https://help.memsql.com/hc/en-us/articles/115002948663-Disable-Transparent-Huge-Pages
+https://developer.couchbase.com/documentation/server/current/install/thp-disable.html
+
+Finalize Upgrade
+http://www.michael-noll.com/blog/2011/08/23/performing-an-hdfs-upgrade-of-an-hadoop-cluster/
+
+Transparent Huge Pages:
+https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Performance_Tuning_Guide/s-memory-transhuge.html
+https://community.hortonworks.com/questions/89517/hadoop-configuration-questions.html
+https://community.hortonworks.com/questions/90075/transparent-hugepage-disable-warning-in-ambari-ins.html
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Java Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#Java
+https://examples.javacodegeeks.com/java-basics/exceptions/java-lang-nullpointerexception-how-to-handle-null-pointer-exception/
+https://beginnersbook.com/
+
+Java Garbage Collection
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
+https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/
+https://community.hortonworks.com/articles/14170/namenode-garbage-collection-configuration-best-pra.html
+http://javapapers.com/java/java-garbage-collection-introduction/
+http://javapapers.com/java/how-java-garbage-collection-works/
+http://javapapers.com/java/types-of-java-garbage-collectors/
+http://blog.takipi.com/garbage-collectors-serial-vs-parallel-vs-cms-vs-the-g1-and-whats-new-in-java-8/
+https://www.javacodegeeks.com/2012/04/what-refactoring-is-and-what-it-isnt.html
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Security Related - Ranger, Kerberos, Atlas
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Delegation Tokens:
+https://hortonworks.com/blog/the-role-of-delegation-tokens-in-apache-hadoop-security/
+
+How Keberized cluster works when somebody submits a job:
+https://www.ibm.com/support/knowledgecenter/en/SSGSMK_6.1.1/mapreduce_user/mr_kerberos_howitworks.html
+https://www.ibm.com/support/knowledgecenter/en/SSGSMK_6.1.1/mapreduce_user/mr_kerberos_auth_hdfs.html
+
+Kerberos Master Book:
+https://steveloughran.gitbooks.io/kerberos_and_hadoop/content/sections/hdfs.html
+
+Keberose aware application
+http://dewoods.com/blog/hadoop-kerberos-guide#kerberos-for-hadoop
+
+Atlas - Troubleshooting
+https://community.hortonworks.com/articles/90962/atlas-install-validation-and-troubleshooting-tips.html?childToView=142245#comment-142245
+
+Knox vs Kerberos
+https://community.hortonworks.com/questions/62130/difference-between-apache-knox-and-kerberos.html
+https://hortonworks.com/apache/knox-gateway/#section_1
+https://hortonworks.com/hadoop-tutorial/securing-hadoop-infrastructure-apache-knox/
+
+Hadoop Security -- very good explanations - has logging and monitoring as well.
+http://apprize.info/security/hadoop/7.html
+
+Securing Hadoop with Apache Ranger
+http://hortonworks.com/blog/best-practices-in-hdfs-authorization-with-apache-ranger/
+
+#Ranger FAQ
+https://ranger.apache.org/faq.html
+
+Kerberos
+http://www.roguelynn.com/words/explain-like-im-5-kerberos/
+
+Kerberos Authentication Demo
+http://centrifying.blogspot.com/2014/08/security-corner-what-is-kerberos-keytab.html
+http://centrifying.blogspot.com/search?q=kerberos
+http://web.mit.edu/Kerberos/krb5-1.13/doc/admin/conf_files/kdc_conf.html#kdc-conf-5
+https://www.cmf.nrl.navy.mil/krb/kerberos-faq.html
+
+#SSL
+https://www.instantssl.com/ssl.html
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Processing Related - YARN, MR, TEZ
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Mapreduce Description
+https://0x0fff.com/hadoop-mapreduce-comprehensive-description/
+
+Yarn Resource Capacity Scheduler
+https://hortonworks.com/blog/managing-cpu-resources-in-your-hadoop-yarn-clusters/
+https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.3.0/bk_yarn_resource_mgt/content/ch_capacity_scheduler.html
+http://www.cobub.com/en/the-selection-and-use-of-hadoop-yarn-scheduler/ — All schedulers
+https://community.hortonworks.com/content/supportkb/151098/common-yarn-capacity-scheduler-issues.html - things to look for.
+https://blog.cloudera.com/blog/2016/01/untangling-apache-hadoop-yarn-part-3/ - Fair Share
+http://blog.cloudera.com/blog/2016/06/untangling-apache-hadoop-yarn-part-4-fair-scheduler-queue-basics/  - Fair share basics
+https://blog.cloudera.com/blog/2016/01/untangling-apache-hadoop-yarn-part-3/ - Fair Share Basics
+
+Yarn Resource Management:
+https://www.mapr.com/blog/best-practices-yarn-resource-management
+
+Scheduler Basics
+http://blog.cloudera.com/blog/2016/01/untangling-apache-hadoop-yarn-part-3/
+
+Capacity - yarn config
+http://hortonworks.com/blog/how-to-plan-and-configure-yarn-in-hdp-2-0/
+http://www.cloudera.com/documentation/enterprise/latest/topics/cdh_ig_yarn_tuning.html
+
+Map Reduce Model
+https://www.tutorialspoint.com/map_reduce/map_reduce_combiners.htm
+
+Mapreduce counters
+http://www.guru99.com/introduction-to-counters-joins-in-map-reduce.html
+
+Map side join vs join
+https://www.edureka.co/blog/map-side-join-vs-join/
+
+Yarn Container launch details
+https://pravinchavan.wordpress.com/2013/04/25/223/
+
+Yarn tuning.
+http://crazyadmins.com/tag/tuning-yarn-to-get-maximum-performance/
+https://mapr.com/blog/best-practices-yarn-resource-management/
+
+Different types of logs on hadoop
+https://www.altiscale.com/blog/top-10-hadoop-yarn-part-1/
+https://www.altiscale.com/blog/top-10-hadoopyarn-logs-part-2/
+
+#Diagnoze Tez Jobs
+https://cwiki.apache.org/confluence/display/TEZ/How+to+Diagnose+Tez+App
+https://community.hortonworks.com/articles/22419/hive-on-tez-performance-tuning-determining-reducer.html https://community.hortonworks.com/articles/14309/demystify-tez-tuning-step-by-step.html
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+HDFS Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+HDFS - Architecture
+https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html
+
+Operational Flow of read and write into hdfs
+http://www.hadoopinsight.com/blog/hdfs/anatomy_of_file_write_and_read_in_hadoop/
+http://data-flair.training/blogs/hadoop-hdfs-data-read-and-write-operations/
+
+What changes when namenode HA is enabled.
+https://developer.ibm.com/hadoop/2015/07/01/impact-namenode-transitioning-connected-clients/
+https://community.hortonworks.com/articles/43838/scaling-the-hdfs-namenode-part-1.html
+https://community.hortonworks.com/articles/43839/scaling-the-hdfs-namenode-part-2.html
+http://www.slideshare.net/Hadoop_Summit/analyzing-hadoop-using-hadoop
+
+HDFS File read and write operaiton
+http://www.aosabook.org/en/hdfs.html#fig.hdfs.file
+
+Small files
+https://community.hortonworks.com/articles/46329/analyze-small-file-in-hdfs.html
+
+Checkpointing
+http://blog.cloudera.com/blog/2014/03/a-guide-to-checkpointing-in-hadoop/
+
+Blocks
+https://www.centoshowtos.org/hadoop/fix-corrupt-blocks-on-hdfs/
+https://issues.apache.org/jira/browse/HDFS-8126 — fsck
+
+Manually change block size:
+https://stackoverflow.com/questions/29604823/change-block-size-of-existing-files-in-hadoop
+http://hadoopinrealworld.com/datanode-block-scanner/
+http://learnersreference.com/hadoop-datanode-checksum-block-scanning
+https://blog.cloudera.com/blog/2016/12/hdfs-datanode-scanners-and-disk-checker-explained/
+
+Namenode protection
+https://community.hortonworks.com/articles/43774/hdfs-namenode-protection-checklist.html
+https://community.cloudera.com/t5/Storage-Random-Access-HDFS/Standby-Namenode-is-getting-RPC-latency-bad-health-alert/td-p/42913
+https://community.hortonworks.com/questions/36195/possible-reasons-that-cause-slow-name-node-nn.html
+
+HDFS Data recovery - Fault tolerance mechanism
+Together, they help to ensure that writes are durable and consistent in HDFS, even in the presence of network and node failures.
+http://blog.cloudera.com/blog/2015/02/understanding-hdfs-recovery-processes-part-1/ — lease recovery and block recovery - write pipeline depth
+http://blog.cloudera.com/blog/2015/03/understanding-hdfs-recovery-processes-part-2/ — pipeline recovery
+https://twiki.opensciencegrid.org/bin/view/Storage/HadoopRecovery
+
+HDFS Commands
+https://community.hortonworks.com/articles/50883/5-infrequently-known-commands-to-debug-your-hdfs-i.html
+
+Journal nodes - quorum - ZKFC - failover controller
+https://hortonworks.com/blog/namenode-high-availability-in-hdp-2-0/
+
+NameNode latency metrics:
+https://community.cloudera.com/t5/Storage-Random-Access-HDFS/Standby-Namenode-is-getting-RPC-latency-bad-health-alert/td-p/42913
+
+Balancer - Good details
+http://www.informit.com/articles/article.aspx?p=2755708&seqNum=5
+
+File format
+https://blog.matthewrathbone.com/2016/09/01/a-beginners-guide-to-hadoop-storage-formats.html
+https://blog.cloudera.com/blog/2017/02/performance-comparing-of-different-file-formats-and-storage-engines-in-hadoop-file-system/
+
+#Heap Size for Data Nodes
+https://community.hortonworks.com/questions/110217/how-to-calculate-the-heapsize-for-datanode.html
+
+DISTCP
+
+http://blog.cloudera.com/blog/2015/12/distcp-performance-improvements-in-apache-hadoop/
+http://www.cloudera.com/documentation/enterprise/latest/topics/cdh_admin_distcp_data_cluster_migrate.html
+http://henning.kropponline.de/2015/03/15/distcp-two-ha-cluster/
+
+Snappy Compression
+http://blog.cloudera.com/blog/2011/09/snappy-and-hadoop/
+http://dmtolpeko.com/2014/10/10/compression-codecs-splittable-not-splitable-confusion/
+http://inquidia.com/news-and-info/hadoop-file-formats-its-not-just-csv-anymore
+https://blog.matthewrathbone.com/2016/09/01/a-beginners-guide-to-hadoop-storage-formats.html
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Hive Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Hive - Incremental Load
+https://hortonworks.com/blog/four-step-strategy-incremental-updates-hive/
+https://hortonworks.com/blog/update-hive-tables-easy-way/
+https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.4/bk_data-access/content/incrementally-updating-hive-table-with-sqoop-and-ext-table.html
+https://stackoverflow.com/questions/24188544/delta-incremental-load-in-hive
+https://community.cloudera.com/t5/Batch-SQL-Apache-Hive/hive-incremental-approach/m-p/56808
+
+Hadoop - Info - Hive Performance tuning.
+http://hadooptutorial.info/hive-performance-tuning/#comment-25389
+https://hortonworks.com/blog/5-ways-make-hive-queries-run-faster/
+http://hadooptutorial.info/hive-performance-tuning/
+https://www.cloudera.com/documentation/enterprise/5-9-x/topics/admin_hive_tuning.html
+https://docs.treasuredata.com/articles/performance-tuning
+https://docs.treasuredata.com/articles/hive
+https://www.qubole.com/blog/big-data/hive-best-practices/
+http://data-flair.training/blogs/mapreduce-job-optimization-performance-tuning-techniques/
+https://www.cloudera.com/documentation/enterprise/5-9-x/topics/admin_hive_tuning.html#id_umf_bmk_nw
+https://iamsoftwareengineer.wordpress.com/2015/06/03/apache-hive-performance-tuning/
+https://hadoopoopadoop.com/2015/09/20/shifting-to-hive-part-ii-a-catalog-of-best-practices-and-optimization/
+
+Hive - Partitioning
+http://hadooptutorial.info/partitioning-in-hive/#External_Partitioned_Tables
+http://hadooptutorial.info/partitioning-in-hive/#Partitioning_in_Hive
+http://www.guru99.com/hive-queries-implementation.html
+https://acadgild.com/blog/apache-hive-file-formats/
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+ORC
+
+JOINS in Hadoop
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Joins
+http://archive.cloudera.com/cdh/3/hive/language_manual/joins.html
+https://www.safaribooksonline.com/blog/2012/12/05/tip-using-joins-in-hive/
+https://www.packtpub.com/mapt/book/Big+Data+and+Business+Intelligence/9781783558575
+https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.1/bk_data-access/content/query-vectorization.html
+https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution
+ http://appcrawler.com/wordpress/2015/06/18/examples-of-connecting-to-kerberos-hive-in-jdbc/
+
+#Druid
+https://hortonworks.com/blog/apache-hive-druid-part-1-3/
+
+Beeline vs Hive
+https://community.hortonworks.com/questions/50547/connecting-hive-beeline-vs-hive.html
+
+#LLAP
+https://community.hortonworks.com/articles/149899/investigating-when-llap-doesnt-start.html
+https://community.hortonworks.com/articles/149998/map-join-memory-sizing-for-llap.html
+https://community.hortonworks.com/articles/149486/llap-sizing-and-setup.html
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Devops Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Dockers:
+http://blog.sequenceiq.com/blog/2015/01/07/yarn-containers-docker/
+http://blog.sequenceiq.com/blog/2014/11/20/yarn-containers-and-docker/
+https://www.slideshare.net/HadoopSummit/yarn-and-the-docker-container-runtime
+http://www.infoworld.com/article/3072929/linux/containers-101-linux-containers-and-docker-explained.html
+https://kb.juniper.net/InfoCenter/index?page=content&id=KB4751&actp=METADATA
+
+Kubernetes
+https://kubernetes.io/docs/tutorials/kubernetes-basics/
+Data Access Perfroamce tips
+https://vladmihalcea.com/2016/06/28/14-high-performance-java-persistence-tips/
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Others Related
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Books list
+https://gist.github.com/augbog/d65f6600188fece854cb341734c5fd12
+https://gist.github.com/abstractart/7b969dd9004cd11e04ba0a031fa4ab6c
+https://hadoopecosystemtable.github.io/
+http://www.allitebooks.com/page/8/?s=python+application+development
+
+GITHUB
+https://svnvsgit.com/
+Contribute to open source
+https://opensource.com/education/13/11/training-college-students-contribute-linux-kernel
+
+Is it possible to have one Hadoop client machine point to two Hadoop clusters?
+
+It is certainly possible but it'd be an edgenode not being managed by Ambari agent as Ambari will try to overwrite your configurations. What you can do is have multiple configuration directories and point each one of them to hdfs client. You can achieve that by exporting HADOOP_CONF_DIR global variable. I would also like to warn you that it's possible to make mistakes in such a set up as it's easy to mix up configurations and apply commands against environments you didn't intend to apply to. It's best to spin up a few lightweight nodes that you'd use for separate enironments or start using Ambari HDFS files view to interact with HDFS, that way you can have separate browser tab for each environment and complications with global variables goes away. We can discuss this further offline.
+
+
+Interview Stuff
+http://data-flair.training/blogs/shuffling-and-sorting-in-hadoop/
+http://www.wideskills.com/hadoop-tutorial
+https://www.edureka.co/blog/interview-questions/top-50-hadoop-interview-questions-2016/
